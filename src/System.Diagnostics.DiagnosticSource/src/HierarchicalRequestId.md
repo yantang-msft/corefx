@@ -70,7 +70,7 @@ Overflow suffix should be large enough to ensure new Request-Id does not collide
 Note that applications could asynchronously start multiple outgoing requests almost at the same time, which makes timestamp even with ticks precision bad candidate for overflow suffix.
 
 ## Example
-Let's consider three services: service-a, service-b and service-c. User calls service-a, which calls service-b to fulfill the user request
+Let's consider two services: service-a, service-b. User calls service-a, which calls service-b to fulfill the user request
 
 `User -> service-a -> service-b`
 
